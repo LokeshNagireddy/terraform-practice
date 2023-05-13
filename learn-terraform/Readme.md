@@ -1,4 +1,4 @@
-#Terraform learning
+###Terraform learning
 
 1. Variables
 2. Data Source
@@ -14,7 +14,7 @@
 12. Import
 13. Provisioners
 
-#Terraform Variable Precedence
+###Terraform Variable Precedence
 
 1. -var-file
 2. *.auto.tfvars
