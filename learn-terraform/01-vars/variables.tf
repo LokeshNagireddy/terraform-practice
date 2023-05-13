@@ -2,6 +2,14 @@ variable "sample-string"{
  default = "Hello World"
 }
 
-output "sample-string" {
-  value = var.sample-string
+variable "string-num"{
+  default = 100
+}
+
+variable "string-bool"{
+  default = true
+}
+
+variable "string-flot"{
+  default = 10.56
 }

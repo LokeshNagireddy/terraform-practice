@@ -1,7 +1,15 @@
-output "auto_num1" {
-  value = var.auto_num1
+output "sample-string" {
+  value = var.sample-string
 }
 
-output "sample1" {
-  value = var.sample1
+output "string-num" {
+  value = var.string-num
+}
+
+output "string-bool" {
+  value = var.string-bool
+}
+
+output "string-flot" {
+  value = var.string-flot
 }
