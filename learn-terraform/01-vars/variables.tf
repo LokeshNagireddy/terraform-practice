@@ -16,6 +16,6 @@ variable "string-flot" {
 
 variable "demo-list" {
 
-default = ["hello",223,False,33.21]
+default = ["hello",223,false,33.21]
 
 }
