@@ -13,3 +13,7 @@ output "string-bool" {
 output "string-flot" {
   value = var.string-flot
 }
+
+output "demo-list"{
+  value= var.demo-list[0]
+}
