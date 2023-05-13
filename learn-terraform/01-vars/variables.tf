@@ -27,3 +27,5 @@ variable "demo-dict" {
     float1 = 10.43
   }
 }
+
+variable "env" {}
