@@ -31,3 +31,11 @@ output "demo-dict-2" {
 output "env" {
   value = var.env
 }
+
+output "demo-auto" {
+  value = var.auto_num1
+}
+
+output "demo-tf" {
+  value = var.sample1
+}
