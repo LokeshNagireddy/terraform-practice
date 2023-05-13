@@ -3,5 +3,5 @@ data "aws_security_group" "first" {
 }
 
 output "security-group-id"{
-  value=data.aws_security_group.first.id
+  value=data.aws_security_group.first
 }
