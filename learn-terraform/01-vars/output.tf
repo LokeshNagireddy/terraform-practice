@@ -20,3 +20,10 @@ output "demo-list"{
 output "demo-list-2" {
   value = "second value of the list= ${var.demo-list[1]}"
 }
+
+output "demo-dict-1"{
+  value= var.demo-dict["num1"]
+}
+output "demo-dict-2"{
+  value= var.demo-dict["str1"]
+}
