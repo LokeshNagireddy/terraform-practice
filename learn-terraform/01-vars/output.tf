@@ -16,4 +16,5 @@ output "string-flot" {
 
 output "demo-list"{
   value= var.demo-list[0]
+  value="second value of the list= ${var.demo-list[1]}"
 }
