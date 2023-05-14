@@ -23,6 +23,6 @@ resource "aws_instance" "instances" {
   instance_type = var.instance-type
   vpc_security_group_ids = [data.aws_security_group.allow-all.id]
 
-  tags = { Name = "frontend" }
+  tags = { Name = var.servers[count.index] }
 }
 
