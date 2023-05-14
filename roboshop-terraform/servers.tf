@@ -29,3 +29,11 @@ resource "aws_instance" "instance" {
   tags = { Name = each.value["name"] }
 }
 
+resource "aws_route53_record" "records" {
+  for_each=var.resources
+  name    = "${each.value["name"]}-dev.lokeshnagireddy.online"
+  type    = "A"
+  zone_id = "Z03986262CQPCHNJNZM9L"
+  ttl = 10
+  records=[aws_instance.instance[each.value["name"]].private_ip]
+}
