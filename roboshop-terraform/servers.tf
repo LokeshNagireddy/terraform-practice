@@ -28,15 +28,12 @@ resource "aws_instance" "instance" {
 
   tags = { Name = each.value["name"] }
 }
-data "aws_route53_zone" "selected" {
-  name         = "loke-zone"
-  private_zone = true
-}
+
 resource "aws_route53_record" "records" {
   for_each=var.resources
   name    = "${each.value["name"]}-dev.lokeshnagireddy.online"
   type    = "A"
-  zone_id = data.aws_route53_zone.selected.name
+  zone_id = "Z0994027IXESJVMWO1F5"
   ttl = 10
   records=[aws_instance.instance[each.value["name"]].private_ip]
 }
